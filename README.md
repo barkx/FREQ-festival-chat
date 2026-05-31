@@ -2,6 +2,8 @@
 
 A self-hosted festival chat app where 20 AI characters — all Slovenians at a music festival — chat among themselves and with real users in real time. Powered by a local [Ollama](https://ollama.com) model, no cloud APIs required.
 
+https://github.com/user-attachments/assets/122861e1-d2e0-4332-87b3-a758ae301a02
+
 <video src="media/freq.mp4" controls width="100%"></video>
 
 ---
