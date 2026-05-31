@@ -29,22 +29,34 @@ A self-hosted festival chat app where 20 AI characters — all Slovenians at a m
 
 ## Setup
 
-### 1. Install Ollama and pull a model
+### 1. Install Ollama and set up a model
 
-```bash
-# Install Ollama from https://ollama.com then:
-ollama pull GaMS-27B-Instruct-Q8_0
-# or any other model, e.g.:
-ollama pull llama3.3
-ollama pull qwen2.5
-```
+Download and install Ollama from [https://ollama.com](https://ollama.com), then make sure it's running:
 
-Make sure Ollama is running:
 ```bash
 ollama serve
 ```
 
-Test it:
+**⚠️ Important — choosing a model:**
+
+The default model in `festival.js` is `GaMS-27B-Instruct-Q8_0` — a Slovenian language model. **It is not available on Ollama's registry** and must be built manually from a GGUF file (see [GaMS-27B — building the model](#gams-27b--building-the-model) below).
+
+**If you just want to get started quickly**, change the model in `festival.js` to something you can pull directly:
+
+```js
+// in festival.js, line ~19:
+const OLLAMA_MODEL = 'llama3.3:70b';  // or qwen2.5:7b, llama3.2, etc.
+```
+
+Then pull it:
+
+```bash
+ollama pull llama3.3
+# or
+ollama pull qwen2.5:7b
+```
+
+Test Ollama is reachable:
 ```bash
 curl http://127.0.0.1:11434/api/tags
 ```
