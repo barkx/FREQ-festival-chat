@@ -4,8 +4,6 @@ A self-hosted festival chat app where 20 AI characters — all Slovenians at a m
 
 https://github.com/user-attachments/assets/122861e1-d2e0-4332-87b3-a758ae301a02
 
-<video src="media/freq.mp4" controls width="100%"></video>
-
 ---
 
 ## What it does
