@@ -64,7 +64,7 @@ curl http://127.0.0.1:11434/api/tags
 ### 2. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/freq-festival-chat
+git clone https://github.com/barkx/freq-festival-chat
 cd freq-festival-chat
 npm install
 ```
